@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><delfos-response protocol-version="1.0">
+    <header>
+        <operation>analysis-request</operation>
+    </header>
+    <body>
+        <result>
+            <code>MSG-0100</code>
+            <message>Requisição executada com sucesso.</message>
+        </result>
+        <analysis>
+            <analysis-id>3526792</analysis-id>
+            <analysis-details>
+                <black-list>
+                    <data-present>false</data-present>
+                </black-list>
+                <white-list>
+                    <data-present>false</data-present>
+                </white-list>
+                <rules>
+                    <final-result>34</final-result>
+                    <rule-list>
+                        <rule>
+                            <id>4700</id>
+                            <name><![CDATA[Score DBM não encontrado]]></name>
+                            <result>3</result>
+                            <order>1</order>
+                        </rule>
+                    </rule-list>
+                    <ultimate-rule>
+                    	<id>4700</id>
+                    	<name>Score DBM não encontrado</name>
+                    	<reason-id/>
+                    	<reason-description/>
+                    </ultimate-rule>
+                </rules>
+                <bureaus>
+                    <bureau-list>
+                        <bureau>
+                            <name><![CDATA[Consulta o score da analise pelo account]]></name>
+                            <external-bureau><![CDATA[UOL]]></external-bureau>
+                            <result>107</result>
+                                                        	<result-value><![CDATA[-1.0]]></result-value>
+                                                        <full-response><![CDATA[<response>
+  <resultado>-1</resultado>
+</response>]]></full-response>
+                        </bureau>
+                    </bureau-list>
+                </bureaus>
+                <results>
+                    <result>3</result>
+                    <score-value>0</score-value>
+                </results>
+            </analysis-details>
+        </analysis>
+        <analysis-data>
+            <![CDATA[<br.com.uol.vericad.domain.analysis.Analysis>
+  <idtAnalysis>3526792</idtAnalysis>
+  <application>
+    <idtApplication>97680</idtApplication>
+  </application>
+  <protocolVersion>
+    <idtProtocolVersion>1</idtProtocolVersion>
+  </protocolVersion>
+  <flgBureauConsultation>true</flgBureauConsultation>
+  <datAnalysis>2016-10-25 13:29:50.0 UTC</datAnalysis>
+  <debit>
+    <numBank>0</numBank>
+  </debit>
+  <customer>
+    <idtAccount>1234</idtAccount>
+    <numCustomerIpAddress>0:0:0:0:0:0:0:1</numCustomerIpAddress>
+    <phoneNumbers class="linked-hash-set"/>
+  </customer>
+  <numScoreResultValue>0</numScoreResultValue>
+  <analysisResult>
+    <idtVariableType>3</idtVariableType>
+    <desVariableType>Decisão Manual</desVariableType>
+  </analysisResult>
+  <analysisStatus>
+    <idtVariableType>8</idtVariableType>
+  </analysisStatus>
+  <analysisResultLogs/>
+  <analysisRuleResults>
+    <br.com.uol.vericad.domain.rule.AnalysisRuleResult>
+      <analysis reference="../../.."/>
+      <ruleResult>
+        <idtRuleResult>3</idtRuleResult>
+        <desRuleResult>Decisão Manual</desRuleResult>
+        <flgDecision>true</flgDecision>
+      </ruleResult>
+      <rule>
+        <idtRule>4700</idtRule>
+        <ruleData>
+          <desRule>Score DBM não encontrado</desRule>
+        </ruleData>
+        <ruleApplications/>
+      </rule>
+      <desRuleOrder>1</desRuleOrder>
+    </br.com.uol.vericad.domain.rule.AnalysisRuleResult>
+  </analysisRuleResults>
+  <analysisConsultationBureauResults>
+    <br.com.uol.vericad.domain.analysis.AnalysisConsultationBureauResult>
+      <analysis>
+        <idtAnalysis>3526792</idtAnalysis>
+        <application>
+          <idtApplication>97680</idtApplication>
+        </application>
+        <protocolVersion>
+          <idtProtocolVersion>1</idtProtocolVersion>
+          <namProtocolVersion>1.0</namProtocolVersion>
+          <flgVisible>true</flgVisible>
+          <flgReleased>true</flgReleased>
+          <datRelease class="sql-timestamp">2011-10-27 02:00:00.0</datRelease>
+        </protocolVersion>
+        <flgBureauConsultation>true</flgBureauConsultation>
+        <datAnalysis>2016-10-25 13:29:50.0 UTC</datAnalysis>
+        <debit>
+          <numBank>0</numBank>
+        </debit>
+        <customer>
+          <idtAccount>1234</idtAccount>
+          <numCustomerIpAddress>0:0:0:0:0:0:0:1</numCustomerIpAddress>
+          <phoneNumbers class="linked-hash-set"/>
+        </customer>
+        <analysisResultLogs/>
+        <analysisRuleResults/>
+        <analysisConsultationBureauResults/>
+        <chargebackStatus>
+          <idtVariableType>28</idtVariableType>
+        </chargebackStatus>
+        <finalRuleExecution>
+          <idtVariableType>36</idtVariableType>
+          <desVariableType>Erro</desVariableType>
+        </finalRuleExecution>
+        <ruleWarning>false</ruleWarning>
+        <chargeback>false</chargeback>
+        <flgManualAnalysis>true</flgManualAnalysis>
+        <parameters/>
+      </analysis>
+      <consultationBureauVariable>
+        <idtConsultationBureauVariable>470</idtConsultationBureauVariable>
+        <protocolVersion>
+          <idtProtocolVersion>1</idtProtocolVersion>
+          <namProtocolVersion>1.0</namProtocolVersion>
+          <flgVisible>true</flgVisible>
+          <flgReleased>true</flgReleased>
+          <datRelease class="sql-timestamp">2011-10-27 02:00:00.0</datRelease>
+        </protocolVersion>
+        <namMnemonic>uol.score.dbm.account</namMnemonic>
+        <desConsultationBureauVariable>Consulta o score da analise pelo account</desConsultationBureauVariable>
+        <namScriptVariable>uolService.getDbmScore</namScriptVariable>
+        <indScopeType>F</indScopeType>
+        <dataType>
+          <idtDataType>2</idtDataType>
+          <desDataType>Número</desDataType>
+          <namDataTypeAlias>integer</namDataTypeAlias>
+        </dataType>
+        <consultationBureau>
+          <idtConsultationBureau>214</idtConsultationBureau>
+          <desConsultationBureau>Consulta o score da analise pelo account</desConsultationBureau>
+          <externalBureau>
+            <idtExternalBureau>31</idtExternalBureau>
+            <desExternalBureal>UOL</desExternalBureal>
+            <flgActive>true</flgActive>
+            <flgUniversal>true</flgUniversal>
+            <cacheExpiration>60</cacheExpiration>
+          </externalBureau>
+          <consultationBureauType>
+            <idtVariableType>105</idtVariableType>
+            <desVariableType>Ambos</desVariableType>
+            <variableCharacteristic>
+              <idtVariableCharacteristic>22</idtVariableCharacteristic>
+              <desVariableCharacteristic>Tipo de Consulta de Bureau</desVariableCharacteristic>
+            </variableCharacteristic>
+          </consultationBureauType>
+          <flgActive>true</flgActive>
+        </consultationBureau>
+        <consultationBureauVariableInputList class="org.hibernate.collection.PersistentSet">
+          <initialized>true</initialized>
+          <owner class="br.com.uol.vericad.domain.bureau.ConsultationBureauVariable" reference="../.."/>
+          <cachedSize>-1</cachedSize>
+          <role>br.com.uol.vericad.domain.bureau.ConsultationBureauVariable.consultationBureauVariableInputList</role>
+          <key class="long">470</key>
+          <dirty>false</dirty>
+          <storedSnapshot class="map">
+            <entry>
+              <br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput>
+                <protocolVariable>
+                  <idProtocolVariable>51</idProtocolVariable>
+                  <protocolVersion reference="../../../../../../protocolVersion"/>
+                  <namMnemonic>anls.cadastro.idtaccount</namMnemonic>
+                  <desProtocolVariable>Account</desProtocolVariable>
+                  <namScriptVariable>customer.idtAccount</namScriptVariable>
+                  <indScopeType>L</indScopeType>
+                  <dataType reference="../../../../../../dataType"/>
+                </protocolVariable>
+                <required>false</required>
+                <numOrder>1</numOrder>
+              </br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput>
+              <br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput reference="../br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput"/>
+            </entry>
+          </storedSnapshot>
+          <set class="linked-hash-set">
+            <br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput>
+              <protocolVariable reference="../../../storedSnapshot/entry/br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput/protocolVariable"/>
+              <required>false</required>
+              <numOrder>1</numOrder>
+            </br.com.uol.vericad.domain.bureau.ConsultationBureauVariableInput>
+          </set>
+        </consultationBureauVariableInputList>
+        <flgActive>true</flgActive>
+        <protocolVariableList/>
+      </consultationBureauVariable>
+      <consultationBureauResult>
+        <idtVariableType>107</idtVariableType>
+        <desVariableType>-1</desVariableType>
+        <fullXmlResponse>&lt;response&gt;
+  &lt;resultado&gt;-1&lt;/resultado&gt;
+&lt;/response&gt;</fullXmlResponse>
+        <dataType>
+          <idtDataType>2</idtDataType>
+        </dataType>
+      </consultationBureauResult>
+      <desExternalBureauResult>9d5bf70bf59623a9ad42de37962b6fe9567668544fef7aa784044d5557d7ccd5d6f0f75549ea321585086434f7627ac500ea6b5bb9b176c717877ad7e8c9cc93e337555affa5a479c268dfceabf8abc83fa5e4b192f1e4411066d7e4f3ea62f5</desExternalBureauResult>
+      <desExternalBureauResultDecript>&lt;response&gt;
+  &lt;resultado&gt;-1&lt;/resultado&gt;
+&lt;/response&gt;</desExternalBureauResultDecript>
+      <dateConsult>2016-10-25 13:32:39.809 UTC</dateConsult>
+      <numValueResultNumber>
+        <double>-1.0</double>
+      </numValueResultNumber>
+      <flgCache>false</flgCache>
+    </br.com.uol.vericad.domain.analysis.AnalysisConsultationBureauResult>
+  </analysisConsultationBureauResults>
+  <chargebackStatus>
+    <idtVariableType>28</idtVariableType>
+  </chargebackStatus>
+  <finalRuleExecution>
+    <idtVariableType>34</idtVariableType>
+    <desVariableType>Decisão Manual</desVariableType>
+  </finalRuleExecution>
+  <ruleWarning>false</ruleWarning>
+  <chargeback>false</chargeback>
+  <flgManualAnalysis>true</flgManualAnalysis>
+  <parameters/>
+  <ultimateRule>
+    <idtRule>4700</idtRule>
+    <ruleData>
+      <desRule>Score DBM não encontrado</desRule>
+    </ruleData>
+    <ruleApplications/>
+  </ultimateRule>
+</br.com.uol.vericad.domain.analysis.Analysis>]]>
+        </analysis-data>
+    <additional-info><score-level>A</score-level></additional-info></body>
+</delfos-response>
