@@ -1,4 +1,4 @@
-package com.uolinc.commons.utils;
+package br.com.erudio.utils;
 
 public class JsonXmlUtils {
 	

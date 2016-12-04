@@ -18,7 +18,7 @@
  * any means without written permisson from an authorized person from
  * Universo Online Inc.
  */
-package com.uolinc.commons.utils.exception;
+package br.com.erudio.utils.exception;
 
 
 /**

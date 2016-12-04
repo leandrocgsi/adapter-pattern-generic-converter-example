@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.uolinc.commons.data.risk;
+package br.com.erudio.data.risk;
 
 
 /**

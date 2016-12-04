@@ -1,4 +1,4 @@
-package com.uolinc.commons.data;
+package br.com.erudio.data;
 
 import java.util.List;
 

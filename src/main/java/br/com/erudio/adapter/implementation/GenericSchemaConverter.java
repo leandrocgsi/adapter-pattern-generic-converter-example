@@ -1,12 +1,13 @@
-package com.uolinc.commons.adapter.implementation;
+package br.com.erudio.adapter.implementation;
 
 import java.io.IOException;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.uolinc.commons.adapter.SchemaAdapter;
-import com.uolinc.commons.adapter.interfaces.Converter;
+
+import br.com.erudio.adapter.SchemaAdapter;
+import br.com.erudio.adapter.interfaces.Converter;
 
 public class GenericSchemaConverter<T> implements Converter<T> {
 

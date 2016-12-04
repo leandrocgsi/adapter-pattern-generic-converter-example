@@ -1,8 +1,8 @@
-package com.uolinc.commons.adapter;
+package br.com.erudio.adapter;
 
-import com.uolinc.commons.adapter.implementation.JsonConverter;
-import com.uolinc.commons.adapter.interfaces.AdvancedSchemaConverter;
-import com.uolinc.commons.adapter.interfaces.Converter;
+import br.com.erudio.adapter.implementation.JsonConverter;
+import br.com.erudio.adapter.interfaces.AdvancedSchemaConverter;
+import br.com.erudio.adapter.interfaces.Converter;
 
 public class SchemaAdapter<T> implements Converter<T> {
 

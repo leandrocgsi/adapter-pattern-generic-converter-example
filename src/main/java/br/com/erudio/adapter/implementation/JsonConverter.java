@@ -1,4 +1,4 @@
-package com.uolinc.commons.adapter.implementation;
+package br.com.erudio.adapter.implementation;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
-import com.uolinc.commons.adapter.interfaces.AdvancedSchemaConverter;
+import br.com.erudio.adapter.interfaces.AdvancedSchemaConverter;
 
 public class JsonConverter<T> implements AdvancedSchemaConverter<T>{
 

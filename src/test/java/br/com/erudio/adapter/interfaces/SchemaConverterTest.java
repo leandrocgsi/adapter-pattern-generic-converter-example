@@ -1,4 +1,4 @@
-package com.uolinc.commons.adapter.interfaces;
+package br.com.erudio.adapter.interfaces;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -11,8 +11,9 @@ import org.junit.Test;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.uolinc.commons.adapter.implementation.GenericSchemaConverter;
-import com.uolinc.commons.data.User;
+
+import br.com.erudio.adapter.implementation.GenericSchemaConverter;
+import br.com.erudio.data.User;
 
 public class SchemaConverterTest {
 
