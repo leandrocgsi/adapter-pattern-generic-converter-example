@@ -11,38 +11,37 @@ import br.com.erudio.adapter.interfaces.Converter;
 
 public class GenericSchemaConverter<T> implements Converter<T> {
 
-	private Class<T> clazz;
-	SchemaAdapter<T> schemaAdapter; 
-	
-	public GenericSchemaConverter(Class<T> clazz) {
-		super();
-		this.clazz = clazz;
-	}
+    private Class<T> clazz;
+    SchemaAdapter<T> schemaAdapter;
 
-	public T convert(String mediaType, String data) {
+    public GenericSchemaConverter(Class<T> clazz) {
+        super();
+        this.clazz = clazz;
+    }
 
-		T user = null;
-		if (mediaType.equalsIgnoreCase("xml")) {
-			XmlMapper xmlMapper = new XmlMapper();
-			try {
-				user = xmlMapper.readValue(data, clazz);
-			} catch (JsonParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (JsonMappingException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		} else if (mediaType.equalsIgnoreCase("json")) {
-			schemaAdapter = new SchemaAdapter<T>(mediaType, clazz);
-			user = (T) schemaAdapter.convert(mediaType, data);
-		} else {
-			System.out.println("Invalid media. " + mediaType
-					+ " format not supported");
-		}
-		return user;
-	} 
-	}
+    public T convert(String mediaType, String data) {
+
+        T user = null;
+        if (mediaType.equalsIgnoreCase("xml")) {
+            XmlMapper xmlMapper = new XmlMapper();
+            try {
+                user = xmlMapper.readValue(data, clazz);
+            } catch (JsonParseException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (JsonMappingException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } else if (mediaType.equalsIgnoreCase("json")) {
+            schemaAdapter = new SchemaAdapter<T>(mediaType, clazz);
+            user = (T) schemaAdapter.convert(mediaType, data);
+        } else {
+            System.out.println("Invalid media. " + mediaType + " format not supported");
+        }
+        return user;
+    }
+}
